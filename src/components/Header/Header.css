@@ -1,0 +1,31 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    font-size: 1.5em;
+    padding: 10px;
+    background: linear-gradient(to right, #3686b4,#2ef286,#8800ff);
+    background-size: 300% 300%;
+    color: rgb(36, 34, 34);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    animation: colors 10s   infinite  ease-in-out;
+    z-index: 10;
+}
+
+header h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+@keyframes colors {
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+}
