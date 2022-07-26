@@ -11,3 +11,17 @@ main{
     padding-top: 130px;
     padding-bottom: 70px;
 }
+
+.title{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 2.25vw;
+    padding: 10px;
+}
+
+@media screen and (max-width:1024px) {
+    .title{
+        font-size: 6vw;
+    }
+}
