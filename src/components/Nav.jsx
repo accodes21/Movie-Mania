@@ -6,10 +6,20 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 import MovieCreationIcon from '@mui/icons-material/MovieCreation';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import Search from '@mui/icons-material/Search';
+import { useNavigate } from "react-router-dom";
+
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
+  const Navigate = useNavigate();
 
+  React.useEffect(() => {
+    if(value === 0) Navigate("/");
+    else if (value === 1) Navigate("/movies");
+    else if (value === 2) Navigate("/series");
+    else if (value === 3) Navigate("/search")
+  }, [value,Navigate])
+  
   return (
     <Box sx={
         { width: '100%',
