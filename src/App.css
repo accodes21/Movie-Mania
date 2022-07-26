@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 main{
     min-height: 100vh;
     background: linear-gradient(to right,#000428,#004f94,#000428);
     color: white;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 70px;
 }
 

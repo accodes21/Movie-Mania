@@ -1,5 +1,6 @@
 header{
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -28,4 +29,10 @@ header h1{
         100%{
             background-position: 0 50%;
         }
+}
+
+@media screen and (max-width:550px) {
+    header{
+        font-size: 1.1em;
+    }
 }
