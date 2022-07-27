@@ -1,22 +1,25 @@
 import axios from "axios";
 import React from "react";
 import Content from "../../components/Content/Content";
+import CustomPagination from "../../components/Pagination/CustomPagination";
 import './Trending.css'
 
 const Trending = () => {
 
+    const [page, setPage] = React.useState(1)
     const [content, setContent] = React.useState([])
 
     const fetchTrend = async () => {
-        const {data} = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}`)
+        const {data} = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`)
 
-        console.log(data)
+        // console.log(data)
         setContent(data.results)
     }
 
     React.useEffect(() => {
         fetchTrend()
-    }, [])
+        // eslint-disable-next-line
+    }, [page]);
     
 
     return(
@@ -35,6 +38,7 @@ const Trending = () => {
             />
           ))}
             </div>
+            <CustomPagination setPage={setPage}/>
         </section>
     )
 }
