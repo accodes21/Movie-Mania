@@ -1,8 +1,59 @@
+import axios from "axios";
+import React from "react";
+import Content from "../../components/Content/Content";
+import CustomPagination from "../../components/Pagination/CustomPagination";
+import Genres from "../../components/Genres";
+
+
 const Movies = () => {
+
+    const [page, setPage] = React.useState(1);
+    const [content, setContent] = React.useState([])
+    const [numOfPages, setNumOfPages] = React.useState()
+    const [genres, setGenres] = React.useState([]);
+    const [selectedGenres, setSelectedGenres] = React.useState([]);
+
+    const fetchMovies = async () => {
+        const {data} = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`)
+
+        // console.log(data);
+        setContent(data.results)
+        setNumOfPages(data.total_pages)
+    }
+
+    React.useEffect(() => {
+        fetchMovies()
+        // eslint-disable-next-line
+    }, [page]);
+
     return(
-        <>
-        <h1 className="title">Movies</h1>
-        </>
+        <section>
+        <h1 className="title"> Discover Movies</h1>
+        <Genres
+        type="movie"
+        selectedGenres={selectedGenres}
+        setSelectedGenres={setSelectedGenres}
+        genres={genres}
+        setGenres={setGenres}
+        setPage={setPage}
+      />
+        <div className="trend">
+            {content && content.map((c) => (
+            <Content
+              key={c.id}
+              id={c.id}
+              poster={c.poster_path}
+              title={c.title || c.name}
+              date={c.first_air_date || c.release_date}
+              media_type={c.media_type}
+              vote_average={c.vote_average}
+            />
+          ))}
+            </div>
+            {numOfPages>1 &&
+            <CustomPagination setPage={setPage} numOfPages={numOfPages}/>
+            }
+        </section>
     )
 }
 
