@@ -7,7 +7,14 @@ import MovieCreationIcon from '@mui/icons-material/MovieCreation';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import Search from '@mui/icons-material/Search';
 import { useNavigate } from "react-router-dom";
+import { createTheme, ThemeProvider } from "@mui/material";
 
+
+const theme = createTheme({
+  palette:{
+      mode:"dark"
+  }
+})
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
@@ -21,11 +28,11 @@ export default function SimpleBottomNavigation() {
   }, [value,Navigate])
   
   return (
+    <ThemeProvider theme={theme}>
     <Box sx={
         { width: '100%',
           position: 'fixed',
           bottom: 0,
-          backgroundColor: "#2d313a",
           zIndex:10
         }
     }
@@ -37,15 +44,16 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction style={{color: 'black'}} label="Trending" 
+        <BottomNavigationAction style={{color: 'white'}} label="Trending" 
         icon={<WhatshotIcon />} />
-        <BottomNavigationAction style={{color: 'black'}} label="Movies" 
+        <BottomNavigationAction style={{color: 'white'}} label="Movies" 
         icon={<MovieCreationIcon />} />
-        <BottomNavigationAction style={{color: 'black'}} label="Series" 
+        <BottomNavigationAction style={{color: 'white'}} label="Series" 
         icon={<LaptopIcon />} />
-        <BottomNavigationAction style={{color: 'black'}} label="Search" 
+        <BottomNavigationAction style={{color: 'white'}} label="Search" 
         icon={<Search />} />
       </BottomNavigation>
     </Box>
+    </ThemeProvider>
   );
 }
