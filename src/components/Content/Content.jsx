@@ -14,7 +14,7 @@ const Content = ({
 }) => {
     return(
         <Modals media_type={media_type} id={id}>
-            <Badge badgeContent={<span>{vote_average.toFixed(1)} <FaStar></FaStar></span>} color={vote_average>6 ? "primary" : "secondary"}/>
+            <Badge badgeContent={vote_average>0?<span>{vote_average.toFixed(1)} <FaStar></FaStar></span>:"NR"} color={vote_average>6 ? "primary" : "secondary"}/>
             <img className="poster"
             src={ poster ? `${img_300}/${poster}` : unavailable} alt={title} />
             <b className="movie-title" title={title}>{title}</b>
