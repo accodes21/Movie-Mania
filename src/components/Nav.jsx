@@ -12,6 +12,12 @@ import { createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
   palette:{
+    primary:{
+      main:'#1976d2'
+  },
+    text:{
+      secondary:'#fff'
+    },
       mode:"dark"
   }
 })
@@ -44,13 +50,13 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction style={{color: 'white'}} label="Trending" 
+        <BottomNavigationAction label="Trending" 
         icon={<WhatshotIcon />} />
-        <BottomNavigationAction style={{color: 'white'}} label="Movies" 
+        <BottomNavigationAction label="Movies" 
         icon={<MovieCreationIcon />} />
-        <BottomNavigationAction style={{color: 'white'}} label="Series" 
+        <BottomNavigationAction label="Series" 
         icon={<LaptopIcon />} />
-        <BottomNavigationAction style={{color: 'white'}} label="Search" 
+        <BottomNavigationAction label="Search" 
         icon={<Search />} />
       </BottomNavigation>
     </Box>
