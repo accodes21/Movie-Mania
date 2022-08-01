@@ -33,6 +33,9 @@
     text-align: center;
     font-size: 1.15em;
     padding: 8px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
   
 .info {
