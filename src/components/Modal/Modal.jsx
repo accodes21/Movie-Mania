@@ -1,13 +1,13 @@
-import * as React from 'react';
-import axios from 'axios';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Button } from '@mui/material';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
+import Modal from '@mui/material/Modal';
+import axios from 'axios';
+import * as React from 'react';
 import { img_500, unavailable, unavailableLandscape } from "../../config/config";
-import { Button } from '@mui/material';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import "./Modal.css"
+import "./Modal.css";
 
 const style = {
   position: 'absolute',
@@ -33,7 +33,6 @@ export default function Modals({children, media_type, id}) {
 
   const fetchData = async () => {
     const {data} = await axios.get(`https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
-    console.log(data)
     setContent(data)
   }
 
