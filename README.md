@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Movie-Mania App✨
+- Your one stop destination for evrything about movies, webseries and tv series.💯
+- Features all the recent trending movies and series.⚡
+- Filter movies and series based various genres.📽️
+- Search any movies/series.🔍
+- Provides overview, release date, ratings, and you can even watch it's trailer.💥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Watch Demo
 
-## Available Scripts
+https://user-images.githubusercontent.com/101868279/181877849-df9d353f-cd63-4060-8efe-ae9d50f7a249.mp4
 
-In the project directory, you can run:
+## Use the Site:-
+## <a href="https://movie-app-bice-ten.vercel.app/" target="blank">Movie-Mania</a>
 
-### `npm start`
+## 🚀 Tech Stack Used
+- HTML, CSS , JavaScript🌐
+- ReactJS⚛️
+- React Router🤖
+- Material UI🎨
+- TheMoviedb API🔥
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 👇🏽 Prerequisites
+Before contributing or adding a new feature, please make sure you have already installed the following tools:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
 
-### `npm test`
+## 🛠️  Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork the project
+2. Clone the project: `git clone https://github.com/<YOUR USERNAME HERE>/Movie-Mania.git`
+3. Navigate to the project directory: `cd Movie-Mania`
+4. Install dependencies with `npm install` 
 
-### `npm run build`
+## 💻 Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Contributions make the open source community such an amazing place to learn, insipire and create.
+- Any contributions you make are greatly appreciated.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🙏🏽 Support
+This project needs a star from you. Don't forget to leave a star 🌟.
