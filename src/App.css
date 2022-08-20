@@ -29,3 +29,16 @@ main{
         font-size: 6vw;
     }
 }
+
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #0095ff;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #3636a7;
+}
