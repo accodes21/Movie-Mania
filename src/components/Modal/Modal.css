@@ -54,6 +54,7 @@
     height: 40%;
     overflow-y: scroll;
     padding: 15px;
+    margin: 5px;
     border-radius: 20px;
     background-color: #023f75;
     scrollbar-width: thin; /* Firefox */

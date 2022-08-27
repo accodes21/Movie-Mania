@@ -8,6 +8,7 @@ import { img_500, unavailable, unavailableLandscape } from "../../config/config"
 import { Button } from '@mui/material';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import "./Modal.css"
+import Carousel from './Carousel/Carousel';
 
 const style = {
   position: 'absolute',
@@ -102,7 +103,7 @@ export default function Modals({children, media_type, id}) {
                   </span>
 
                   <article>
-
+                    <Carousel media_type={media_type} id={id}/>
                   </article>
 
                   <Button
