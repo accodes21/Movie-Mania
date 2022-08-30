@@ -47,7 +47,7 @@ const Carousel = ({media_type, id}) => {
   }, []);
 
   return (
-    <AliceCarousel autoPlay responsive={responsive} disableDotsControls disableButtonsControls mouseTracking items={items} />
+    <AliceCarousel autoPlay responsive={responsive} disableDotsControls infinite disableButtonsControls mouseTracking items={items} />
   );
 }
 
