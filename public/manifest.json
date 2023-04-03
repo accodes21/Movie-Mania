@@ -1,18 +1,12 @@
 {
+  "name": "MovieMania - One stop for movies",
   "short_name": "MovieMania",
-  "name": "MovieMania - One Stop App for Movies",
-  "start_url": "./",
-  "scope":"./",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
-    {
-      "src": "assets/icons/icon-48x48.png",
-      "sizes": "48x48",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
     {
       "src": "assets/icons/icon-72x72.png",
       "sizes": "72x72",
