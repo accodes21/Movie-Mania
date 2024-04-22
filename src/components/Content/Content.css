@@ -44,3 +44,11 @@
     padding-bottom: 3px;
     padding: 0 2px;
 }
+
+.info button{
+    cursor: pointer;
+}
+
+.info button:hover{
+    background-color: gold;
+}

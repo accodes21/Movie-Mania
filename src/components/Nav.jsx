@@ -6,6 +6,7 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 import MovieCreationIcon from '@mui/icons-material/MovieCreation';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import Search from '@mui/icons-material/Search';
+import { Subscriptions } from '@mui/icons-material';
 import { useNavigate } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -31,6 +32,7 @@ export default function SimpleBottomNavigation() {
     else if (value === 1) Navigate("/movies");
     else if (value === 2) Navigate("/series");
     else if (value === 3) Navigate("/search")
+    else if (value === 4) Navigate("/watchlist")
   }, [value,Navigate])
   
   return (
@@ -58,6 +60,8 @@ export default function SimpleBottomNavigation() {
         icon={<LaptopIcon />} />
         <BottomNavigationAction label="Search" 
         icon={<Search />} />
+        <BottomNavigationAction label="WatchList" 
+        icon={<Subscriptions />} />
       </BottomNavigation>
     </Box>
     </ThemeProvider>
