@@ -31,7 +31,7 @@ const Genres = ({
         // console.log(data.genres)
     }
 
-    console.log(genres)
+    // console.log(genres)
 
 
     React.useEffect(() => {
