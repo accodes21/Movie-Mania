@@ -42,3 +42,51 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
     background-color: #3636a7;
 }
+
+.sign-in-div{
+    display: flex;
+    height:90vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right,#000428,#004f94,#000428);
+}
+
+.sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282c34;
+    background: gold;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.sign-in-div p{
+    color: white;
+    font-size: 1em;
+}
+
+.sign-out-div{
+    display: flex;
+    justify-content: center;
+}
+
+.sign-out{
+    color: #282c34;
+    background: gold;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.user p{
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family:Georgia, serif;
+}
